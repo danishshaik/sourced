@@ -1,0 +1,347 @@
+body {
+	background-color: #ecf0f1;
+}
+
+.header {
+	font-family: Avenir Next;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 45px;
+}
+
+.card-container {
+	width: 70%;
+	background-color: white;
+	padding: 20px;
+	overflow: auto;
+	height: 100vh;
+}
+
+.company-card {
+/*	box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+*/	box-shadow: 0px 10px 25px -5px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+}
+
+.company-name {
+	font-family: AvenirNext-DemiBold;
+	font-size: 40px;
+}
+
+.company-desc {
+	font-family: AvenirNext-Regular;
+	font-size: 16px;
+}
+
+.tag {
+	padding-right: 1.12rem;
+	padding-left: 1.12rem;
+	padding-bottom: 0.35rem;
+	padding-top: 0.35rem;
+	border-radius: 3px;
+}
+
+.tag-text {
+	font-family: Avenir Next;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.side-boarder {
+	border-radius: 5px 0px 0px 5px;
+}
+
+.circle {
+    border: 5px solid white;
+    height: 75px;
+    border-radius:50%;
+    width: 75px;
+    position: absolute;
+    left:-35px;
+    top: 30%;
+}
+
+.company-logo {
+	
+	line-height: 65px;
+	max-height: 50px;
+	max-width: 50px;
+	filter: brightness(0) invert(1);
+}
+
+.logo-vertical {
+	line-height: 65px;
+}
+
+.star {
+	margin-top: 100%;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  	width: 31px;
+  	height:30px;
+}
+
+.upvotes-text {
+    font-family: AvenirNext-DemiBold;
+	font-size: 12px;
+	color: white;
+	line-height: 33px;
+	text-align: center;
+}
+
+/*#span0 {
+    width: 0%;
+}*/
+
+.card-container {
+	float: right;
+}
+
+.row > div {
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;   
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ecf0f1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.custom-padding {
+	margin: 0.5vh;
+	padding-left: 30px;
+}
+
+.nine {
+	height: 99vh !important;
+	border-radius: 10px;
+}
+
+button:focus {
+	outline: none !important;
+}
+
+.hamburger {
+	-webkit-transform:scale(0.8);
+	-moz-transform:scale(0.8);
+	-ms-transform:scale(0.8);
+	transform:scale(0.8);
+}
+
+.menu-item {
+	height: 18vh;
+	width: 18vh;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	text-align: center;
+	margin: auto;
+	transition: all .3s ease;
+
+	color: white;
+	font-family: AvenirNext-Bold;
+	font-size: 1.2rem;
+	letter-spacing: .05em;
+	line-height: 18vh;
+}
+
+.menu-item:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  cursor: pointer;
+}
+
+.pink-gradient {
+	background: rgb(242,49,135);
+	background: linear-gradient(45deg, rgba(242,49,135,0.9) 0%, rgba(248,59,197,1) 100%);
+}
+
+.blue-gradient {
+	background: rgb(44,214,163);
+	background: linear-gradient(45deg, rgba(44,214,163,0.9) 0%, rgba(58,115,226,1) 100%);
+}
+
+.orange-gradient {
+	background: rgb(249,190,115);
+	background: linear-gradient(45deg, rgba(249,190,115,0.9) 0%, rgba(237,111,99,1) 100%);
+}
+
+.purple-gradient {
+	background: rgb(190,108,214);
+	background: linear-gradient(45deg, rgba(190,108,214,0.9) 0%, rgba(93,61,177,1) 100%);
+}
+
+a {
+	color: black;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;  
+}
+
+a:hover {
+	color: black;
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+.mobile-card {
+	border-radius: 5px;
+	box-shadow: 0px 10px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-banner {
+	height: 27%;
+	border-radius: 5px 5px 0px 0px;
+	background-color: black;
+}
+
+.mobile-circle {
+	border: 5px solid white;
+    height: 75px;
+    border-radius:50%;
+    width: 75px;
+    position: relative;
+	bottom: -60px;
+	margin-bottom: 3%;
+}
+
+.mobile-name {
+	font-family: AvenirNext-DemiBold;
+	font-size: 32px;
+	/*margin-top: 3%;*/
+	line-height: 1em;
+    margin-top: 6.5%;
+    margin-bottom: 3%;
+}
+
+.mobile-desc {
+	font-family: AvenirNext-Regular;
+	font-size: 14px;
+	color: #2C3E50;
+}
+
+.mobile-tag-text {
+	font-size: 10px;
+	line-height: 22px;
+}
+
+.mobile-tag {
+	padding-right: .5rem;
+	padding-left: .5rem;
+	padding-bottom: 0.1rem;
+	padding-top: 0.1rem;
+	border-radius: 3px;
+}
+
+.hamburger-background {
+	width: 35px;
+	height: 35px;
+	background-color: #e1e7e9;
+	border-radius: 10px;
+}
+
+.hamburger-img {
+	width:15px;
+	margin-top: 7px;
+}
+
+#topNav {
+	background-color: #ecf0f1;
+	width: 100%;
+	height: 0;
+	position: relative;
+
+	-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; 
+    overflow: hidden;
+}
+
+.mobile-container {
+	background-color: #ecf0f1;
+}
+
+.nav-row {
+	position: absolute;
+	top: 52%;
+	margin-top: -10vw;
+}
+
+#main-mobile {
+	background-color: #fff;
+	min-height: 100vh;
+	padding: 8px;
+
+	-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; 
+}
+
+.mobile-item {
+	width: 20vw;
+	height: 20vw;
+	line-height: 20vw;
+	font-size: 0.8em;
+}
+
+.expanded-main {
+	border-radius: 15px 15px 0px 0px;
+	box-shadow: 0px 10px 25px -5px rgba(0, 0, 0, 0.2);
+	margin-top: 4%;
+}
+
+/*.nav {
+	position: sticky;
+	top: 0;
+	background-color: white;
+	z-index: 5;
+}*/
+/*.col-12 {
+	flex-grow: 1;
+	transition: all 500ms ease;
+}*/
