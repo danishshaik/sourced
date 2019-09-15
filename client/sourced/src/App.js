@@ -35,12 +35,11 @@ class App extends React.Component {
 			expanded: false,
 			mobileExpand: false
 		}
+
 	}
 
-	initializeReactGA() {
-    	ReactGA.initialize('UA-148059387-1');
-    	ReactGA.pageview('/homepage');
-	}
+	// initializeReactGA() {
+	// }
 
 	upVoteHandler(id) {
 		let allcompaniesCopy = this.state.allcompanies.slice();
@@ -160,6 +159,8 @@ class App extends React.Component {
 	}
 
 	renderCompanies() {
+		ReactGA.initialize('UA-148059387-1');
+		ReactGA.pageview('/homepage');
 		if (this.state.companies) {
 			let companiesCopy = this.state.companies.slice();
 			let cards = companiesCopy.map((company) => 
