@@ -11,6 +11,7 @@ import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse'
 import {Card as BootCard} from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
+import ReactGA from 'react-ga';
 
 
 import FlipMove from 'react-flip-move';
@@ -34,6 +35,11 @@ class App extends React.Component {
 			expanded: false,
 			mobileExpand: false
 		}
+	}
+
+	initializeReactGA() {
+    	ReactGA.initialize('UA-148059387-1');
+    	ReactGA.pageview('/homepage');
 	}
 
 	upVoteHandler(id) {
